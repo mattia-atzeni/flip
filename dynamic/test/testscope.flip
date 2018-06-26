@@ -1,0 +1,5 @@
+let x = 1 in
+let f = fun y -> x + y in
+let g = fun h ->
+	let x = 2 in h(3) + x
+in let x = 4 in g(f)

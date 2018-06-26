@@ -1,0 +1,2 @@
+let f = fun x -> fun y -> fun z -> x (y), z in
+(f (fun x -> x * 2) (2) (1)).fst

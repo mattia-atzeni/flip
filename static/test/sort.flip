@@ -1,0 +1,8 @@
+let rec insert = fun i l ->
+	if l = [] then [i]
+	else if i < l.head then i :: l
+	else l.head :: insert (i l.tail)
+in let rec sort = fun l ->
+	if l = [] then []
+	else insert (l.head sort (l.tail))
+in sort ([51235; 445; 8; 68798; -25; -45])  

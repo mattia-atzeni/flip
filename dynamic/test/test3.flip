@@ -1,0 +1,9 @@
+let x = 0 in
+let f = fun () -> (
+	let x = 1 in
+	let g = fun () -> (
+		let y = 2 in
+		let h = fun () -> y in 
+		let y = 3 in h
+	) in g()
+) in f () ()

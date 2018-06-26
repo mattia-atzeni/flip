@@ -1,0 +1,4 @@
+try (
+	raise "ExampleException"
+)
+catch "ExampleException" -> bigint -1

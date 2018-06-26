@@ -1,0 +1,7 @@
+let range = fun a b ->
+	if b < a then []
+	else a :: range ((a + 1) b)
+in let fold_right = fun f l z ->
+	if l = [] then z
+	else f (l.head fold_right (f l.tail z))
+in fold_right ((fun a b -> a + b) range (1 100) 0)

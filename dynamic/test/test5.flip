@@ -1,0 +1,6 @@
+let x = 0 and y = 1 in
+let f = fun () -> (
+	let x = 2 in
+	let y = 3 in
+	let g = fun () -> x + y in g
+) in f () () + y

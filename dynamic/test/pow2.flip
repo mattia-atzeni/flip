@@ -1,0 +1,7 @@
+let pow = fun a -> fun b ->
+  if b = 0 then bigint 1
+  else if (b mod 2) = 0 then
+    pow (a) (b / 2) * pow (a) (b / 2)
+  else 
+    a * pow (a) (b - 1)
+in let pow2 = pow (2) in pow2 (10) 

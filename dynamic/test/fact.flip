@@ -1,0 +1,4 @@
+let fact = fun n ->
+	if n.iszero then bigint 1
+	else n * fact (n - 1)
+in fact (100)
