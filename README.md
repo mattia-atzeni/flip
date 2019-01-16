@@ -115,7 +115,7 @@ in let rec sort = fun l ->
 in sort ([51235; 445; 8; 68798; -25; -45])
 ```
 
-### Fold-Right Exmple
+### Fold-Right Example
 The following code implements the ```fold_right``` function, which is then applied to compute the sum of the integers between 1 and 100.
 ```ocaml
 let rec range = fun a b ->
