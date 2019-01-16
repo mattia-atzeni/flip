@@ -148,7 +148,7 @@ In order to be able to use Flip within graphical applications such as text edito
 
 ```console
 $ echo export FLIP_HOME=`pwd` >> ~/.profile
-$ echo PATH=$PATH:$FLIP_HOME/bin >> ~/.profile
+$ echo "export PATH=\$PATH:\$FLIP_HOME/bin" >> ~/.profile
 $ source ~/.profile
 ```
 
