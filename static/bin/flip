@@ -1,15 +1,15 @@
 #!/bin/bash
-cd $FLIP_HOME
 
 if [ $# -gt 0 ]; then
-	cd test
-	rm -f source
-	ln -s $1 source
-	cd ..
+	rm -f $FLIP_HOME/source/test
+	cp $1 $FLIP_HOME/source/test
 fi
+
+wd=$(pwd)
+cd $FLIP_HOME
 
 make run
 make clean
 	
-	
+cd $wd	
 
