@@ -168,7 +168,7 @@ Overwrite the content of the newly created file:
 	"shell_cmd": "flip $file"
 }
 ```
-Save the file as ```Flip.sublime-build```.
+Save the file as ```Flip.sublime-build```. You may have to log out in order to make Flip visible to Sublime Text. 
 
 Now, open the ```static/test/fact.flip``` file in Sublime Text. From ```Tools -> Build System``` select ```Flip```.
 
