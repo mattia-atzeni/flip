@@ -138,8 +138,13 @@ $ sudo apt-get install ocaml camlp4
 The repository provides two interpreters, corresponding to a statically-scoped and a dynamically-scoped language.
 In the following, we refer to the statically-scoped language and to a Unix environment.
 
-So, download the ```static``` folder and open a shell in this directory.
-We need to add the interpreter in path. In order to be able to use Flip within graphical applications such as text editors, we add some lines to the ```~/.profile``` file. From the ```static``` directory, run:
+Clone the repository and ```cd``` to the static ```static``` directory.
+```console
+$ git clone https://github.com/mattia-atzeni/flip
+$ cd flip/static
+```
+
+In order to be able to use Flip within graphical applications such as text editors, we add some lines to the ```~/.profile``` file.
 
 ```console
 $ echo export FLIP_HOME=`pwd` >> ~/.profile
@@ -152,7 +157,6 @@ Now you can interpret any Flip program. As an example, form the ```static``` dir
 ```console
 $ flip test/fact.flip
 ```
-
 to execute a program implementing the factorial function.
 
 You can also integrate Flip in text editors such as [Sublime Text](https://www.sublimetext.com/).
@@ -170,7 +174,7 @@ Now, open the ```static/test/fact.flip``` file in Sublime Text. From ```Tools ->
 
 Press ```Ctrl + B``` to run the Flip interpreter.
 
-This will run the program ```fact.flip``` and compute the factorial of 500, as shown in the figure below. As you can see, Flip takes advantage of the ```bigint``` type to efficiently support arbitrary-precision arithmetic.
+This will run the program ```fact.flip``` and compute the factorial of 500, as shown in the figure below. As you can see, Flip takes advantage of the ```bigint``` type to natively support arbitrary-precision arithmetic.
 
 <p align="center">
 <img src="img/flip-fact-example.png" width="70%">
