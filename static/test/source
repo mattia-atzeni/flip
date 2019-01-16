@@ -1,1 +1,4 @@
-pow.flip
+let rec fact = fun n ->
+	if n = 0 then bigint 1
+	else n * fact(n - 1)
+in fact(500)

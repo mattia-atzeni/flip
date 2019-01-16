@@ -1,8 +1,8 @@
 #!/bin/bash
 
 if [ $# -gt 0 ]; then
-	rm -f $FLIP_HOME/source/test
-	cp $1 $FLIP_HOME/source/test
+	rm -f $FLIP_HOME/test/source
+	cp $1 $FLIP_HOME/test/source
 fi
 
 wd=$(pwd)
